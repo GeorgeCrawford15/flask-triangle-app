@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Triangle Checker</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Triangle Checker</h1>
+        <input type="number" id="a" placeholder="Side a">
+        <input type="number" id="b" placeholder="Side b">
+        <input type="number" id="c" placeholder="Side c">
+        <button onclick="checkTriangle()">Check</button>
+        <div id="result"></div>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
