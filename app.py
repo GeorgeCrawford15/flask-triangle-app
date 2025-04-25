@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 def classify_triangle(a, b, c):
     if (a + b > c) and (b + c > a) and (a + c > b):
-        triangle_type = "These side lengths make a triangle. "
+        triangle_type = "These side lengths make a triangle."
         if a != b and a != c and b != c:
             triangle_type += "This is a scalene triangle."
         elif (a == b and a != c) or (a == c and a != b) or (b == c and b != a):

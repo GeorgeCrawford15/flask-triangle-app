@@ -11,4 +11,10 @@ async function checkTriangle() {
   
     const data = await response.json();
     document.getElementById("result").textContent = data.result;
+    if (document.getElementById("result").textContent.includes("These side lengths make a triangle.")) {
+        document.getElementById("result").style.color = "green";
+    } else {
+        document.getElementById("result").style.color = "red";
+    }
+
   }
